@@ -1,0 +1,256 @@
+    <!-- HTML Comments
+     Name: Olayinka Idumu
+     File name: hometown
+     Date: 22nd January, 2025
+     Description: The page contain a form that collect users data,
+    including payment information using credit card
+   --> 
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab 4 by Olayinka Idumu</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="box">
+      <header>
+        <h1>Registration</h1>
+        <p id="middle">
+          Please enter the following information. Fields marked with an asterisk
+          (<span id="neededx">*</span>) are required. where x in "neededx"
+          respresents numbers from 1 to 8 such as needed1, needed2 ,..., needed8
+        </p>
+      </header>
+      <div id="inside">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <!-- * First Name | textbox -->
+           <form method="post" action="javascript:void(0);">
+          <table>
+            <tr>
+                <td><span id="needed1"></span>
+                    <label for="firstname">First Name:</label>
+                </td>
+                <td>
+                    <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              size="40"
+            />
+                </td>
+            </tr>
+            
+            <tr>
+              <td>
+                <span id="needed2"></span>
+                <label for="lastname">Last Name:</label>
+              </td>
+              <td>
+                <input
+                type="text"
+                id="lastname"
+                name="lastname"
+                size="40"
+              />
+              </td>
+            </tr>
+         
+            <tr>
+             <td>
+                <span id="needed3"></span>
+            <label for="address">Address:</label>
+             </td>
+             <td>
+                <input
+              type="text"
+              id="address"
+              name="address"
+              size="40"
+            />
+             </td>
+         </tr>
+         <tr>
+            <td>
+                <span id="needed4"></span>
+                <label for="city">City:</label>
+            </td>
+            <td>
+                <input type="text" id="city" name="city" size="40" />
+            </td>
+         </tr>
+         <tr>
+            <td>
+                <span id="needed5"></span>
+            <label>Province:</label>
+            </td>
+            <td>
+                <select>
+                    <option>select province</option>
+                  <option value="British Columbia">British Columbia</option>
+                  <option value="Alberta">Alberta</option>
+                  <option value="Saskatchewan">Saskatchewan</option>
+                  <option value="Manitoba">Manitoba</option>
+                  <option value="Ontario">Ontario</option>
+                  <option value="Quebec">Quebec</option>
+                  <option value="New Brunswick">New Brunswick</option>
+                  <option value="Nova Scotia">Nova Scotia</option>
+                  <option value="Prince Edward Island">Prince Edward Island</option>
+                  <option value="Newfoundland">Newfoundland</option>
+                  <option value="Yukon">Yukon</option>
+                  <option value="Northwest Territories">
+                    Northwest Territories
+                  </option>
+                  <option value="Nunavut">Nunavut</option>
+                </select>
+            </td>
+         </tr>
+         <tr>
+            <td>
+              <span id="needed6"></span>
+              <label for="postalcode">Postal Code:</label>
+            </td>
+            <td>
+                <input
+                type="text"
+                id="postalcode"
+                name="postalcode"
+                placeholder="K0A2RP"
+                size="40"
+              />
+            </td>
+         </tr>
+         <tr>
+            <td>
+                <span id="needed7"></span>
+                <label for="email">Email:</label>
+            </td>
+            <td>
+                <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="xyz@gxxx.com"
+                size="40"
+              />
+            </td>
+         </tr>
+         <tr>
+            <td>
+                <span id="needed8"></span>
+            <label for="homephone">Home phone:</label>
+            </td>
+            <td>
+                <input
+                type="tel"
+                id="homephone"
+                name="homephone"
+                placeholder="home phone"
+                size="40"
+              />
+            </td>
+         </tr>
+         <tr>
+            <td>
+                <label for="workphone">Work Phone:</label>
+            </td>
+            <td>
+                <input
+                type="tel"
+                id="workphone"
+                name="workphone"
+                placeholder="work phone"
+                size="40"
+              />
+            </td>
+         </tr>
+          </table>
+        </fieldset>
+        <fieldset>
+          <legend>Payment Information</legend>  
+            <table>
+              <tr>
+                <td>
+                    <label>Credit Card Type:</label>
+                </td>
+                <td>
+                  <img src="images/visa.png"/><input
+                    name="creditCard"
+                    id="creditCardVisa"
+                    type="radio"
+                  />VISA
+                </td>
+                <td>
+                  <img src="images/mastercard.png"/><input
+                    name="creditCard"
+                    id="creditCardAmex"
+                    type="radio"
+                  />MasterCard
+                </td>
+                <td>
+                  <img src="images/amex.png" /><input
+                    name="creditCard"
+                    id="creditCardMasterCard"
+                    type="radio"
+                  />American Express
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <label for="creditcard">Credit Card Number:</label>
+                </td>
+                <td>
+                    <input
+                    type="text"
+                    id="creditcard"
+                    name="creditcard"
+                    placeholder="1234567.."
+                    size="40"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                    <label for="creditcard">Expiry Date:</label>
+                </td>
+                <td>
+                    <input
+                    type="text"
+                    id="expirydate"
+                    name="expirydate"
+                    placeholder="12/30"
+                    maxlength="5"
+                  />
+                </td>
+                
+              </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+          <legend>Agree and Submit</legend>
+          <!-- * Agree to Terms and Conditions? | checkbox, value of 'yes' -->
+          <table>
+           <tr>
+            <td>Check if you agree with our <span>Agree to Terms and Conditions</span></td>
+            <td><input type="checkbox" value="yes" /></td>
+           </tr> 
+            
+            
+          </div>
+          <!-- No field name. Place a submit button in one column, and reset button in the other. -->
+        </table>
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+          </div>
+        </form>
+        </fieldset>
+      </div>
+      <!-- End Content -->
+      <footer>
+        <p>&copy;2013 CST8285. All rights reserved.</p>
+      </footer>
+    </div>
+    <!-- End Wrapper -->
+  </body>
+</html>
