@@ -1,0 +1,94 @@
+/* a) Add margin and padding 0 pixel to all the body elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* b) Add any font family from your choice to all the body elements */
+body {
+  font-family: "Arial", sans-serif; /* You can choose a different font if desired */
+}
+
+/* c) Set the background color of the header to "#333" (Dark charcoal) and the text color to white */
+header {
+  background-color: #333;
+  color: white;
+}
+
+/* d) Add padding of 22 pixels to the header */
+header {
+  padding: 22px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.box {
+  background-color: #f1f1f1;
+  border: solid #ddd 1px;
+  border-radius: 5px;
+  padding: 20px;
+  min-width: 200px;
+  width: 200px;
+  margin: 10px;
+}
+
+footer p {
+  margin: 20px;
+}
+
+.red {
+  background-color: red;
+  box-shadow: 5px 5px 20px #333;
+}
+.blue {
+  background-color: blue;
+  box-shadow: 5px 5px 20px#333;
+}
+.green {
+  background-color: green;
+  box-shadow: 5px 5px 20px #333;
+}
+.orange {
+  background-color: orange;
+  box-shadow: 5px 5px 20px #333;
+}
+
+.yellow {
+  background-color: yellow;
+  box-shadow: 5px 5px 20px #333;
+}
+img {
+  width: 190px;
+  margin: 5px;
+  height: 150px;
+}
+
+/*  Creating a responsive layout using media queries */
+@media (max-width: 600px) {
+  .container {
+    background-color: chartreuse;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  img {
+    width: 80%;
+    height: 80%px;
+  }
+}
