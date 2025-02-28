@@ -1,0 +1,141 @@
+/* 
+Name: Olayinka Idumu
+*/
+
+/* Resetting margin and padding for all elements to avoid default spacing */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body styles */
+  body {
+      background-color: #ddd78d; /* Set background color */
+      color: rgb(41, 39, 39); /* Set text color */
+      font-family: "Arial", sans-serif; /* Set font to Arial (fallback to sans-serif if unavailable) */
+      margin: 10px; /* Add a 10px margin around the body */
+  }
+  
+  /* Header and footer styles */
+  header,
+  footer {
+    background-color: #60594d; /* Set background color */
+    color: #93a29b; /* Set text color */
+    border: 4px black solid; /* Add a solid black border */
+    padding: 10px; /* Add padding around the content */
+    margin-bottom: 10px; /* Add margin below the header/footer */
+    min-height: 80px; /* Set a minimum height for the header/footer */
+  }
+  
+  /* Heading 1 (h1) styles */
+  h1 {
+    font-size: 35px; /* Set font size */
+    word-wrap: normal; /* Allow words to break naturally */
+    margin-bottom: 20px; /* Add margin below the heading */
+  }
+  
+  /* Navigation styles */
+  nav {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center the navigation items */
+    gap: 10px; /* Add space between navigation items */
+    font-size: 12px; /* Set font size */
+    margin-left: auto; /* Center the navigation horizontally */
+    margin-right: auto;
+  }
+  
+  /* Navigation links styles */
+  nav a {
+    border-radius: 10px; /* Round the corners of the links */
+    width:auto; /* Make the link width automatic */
+    padding: 4px; /* Add padding inside the links */
+    background-color: white; /* Set background color to white */
+    margin-left: 10px; /* Add margin to the left of each link */
+    color: rgb(41, 39, 39); /* Set text color */
+  }
+  
+  /* Default anchor tag (link) styles */
+  a {
+    text-decoration: none; /* Remove underlining from links */
+  }
+  
+  /* Hover effect for anchor tags */
+  a:hover {
+    color: #8b635c; /* Change text color on hover */
+  }
+  
+  /* Hover effect for navigation links */
+  nav a:hover {
+    background-color: lawngreen; /* Change background color on hover */
+  }
+  
+  /* Heading 2 (h2) inside sections */
+  main section h2 {
+    font-size: 1.2rem; /* Set font size */
+  }
+  
+  /* Paragraph and general paragraph styling */
+  p, .general-paragraph {
+    font-size: 14pt; /* Set font size */
+    margin-top: 10px; /* Add top margin */
+    margin-bottom: 10px; /* Add bottom margin */
+    justify-content: left; /* Align the content to the left */
+  }
+  
+  /* Styling list item markers (bullets) */
+  ul li::marker { 
+    font-weight: bold; /* Make list item markers bold */
+  }
+  
+  /* Quotation paragraph styles */
+  .quotation-paragraph {
+    background-color: #dcbf85; /* Set background color */
+    text-align: center; /* Center align the text */
+    margin-left: 20px; /* Add left margin */
+    margin-right: 20px; /* Add right margin */
+    padding: 10px; /* Add padding inside the quotation block */
+  }
+  
+  /* Image styling */
+  img {
+    display: inline; /* Make the image inline (not block-level) */
+    width: 25vw; /* Set image width to 25% of the viewport width */
+    height: 25vw; /* Set image height to 25% of the viewport width */
+    float: right; /* Float the image to the right */
+    margin-top: 10px; /* Add top margin */
+    margin-left: 10px; /* Add left margin */
+    margin-right: 10px; /* Add right margin */
+  }
+  
+  /* Footer paragraph styling */
+  footer p {
+      margin-top: 20px; /* Add top margin */
+      font-style: italic; /* Make the text italic */
+      margin-right: 5px; /* Add right margin */
+      float: right; /* Float the footer paragraph to the right */
+  }
+  
+  /* Centered text with blue color */
+  .ce {
+      text-align: center; /* Center align the text */
+      color: blue; /* Set text color to blue */
+  }
+  
+  /* Ordered list styling */
+  ol li {
+      margin-left: 2.5rem; /* Add left margin to list items */
+  }
+  
+  /* Line class with left margin */
+  .line {
+      margin-left: 40px; /* Add left margin */
+  }
+  
+  /* Media query for screens with max width of 600px */
+  @media (max-width:600px) {
+      .container {
+          display: flex; /* Use flexbox layout */
+          flex-direction: row; /* Arrange the flex items in a row */
+      }
+  }
+  

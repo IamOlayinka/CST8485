@@ -6,6 +6,7 @@ settings to assist with cross browser compatibility.
    */
 
 /* CSS Reset */
+/* Resetting margin, padding, and border for all elements to ensure uniform styling */
 html,
 body,
 div,
@@ -85,55 +86,65 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
-  padding: 0;
-  border: 0;
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  border: 0; /* Removes default border */
 }
+
+/* Styling for required fields (e.g., showing red asterisk) */
 .required-field {
-  content: "*";
-  color: red;
+  content: "*"; /* Adds an asterisk as content */
+  color: red; /* Sets asterisk color to red */
 }
 
+/* Box container styling */
 #box {
-  background-color: #ffbf40;
-  margin-top: 20px;
-  padding-top: 10px;
-  border: solid black 1px;
-  width: 900px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: #ffbf40; /* Orange background */
+  margin-top: 20px; /* Adds space above */
+  padding-top: 10px; /* Adds space inside at the top */
+  border: solid black 1px; /* Black border */
+  width: 900px; /* Fixed width */
+  margin-left: auto; /* Centers the box horizontally */
+  margin-right: auto; /* Centers the box horizontally */
 }
 
+/* Fieldset styling */
 fieldset {
-  margin-top: 5px;
-  background-color: #ffd073;
+  margin-top: 5px; /* Adds space above fieldset */
+  background-color: #ffd073; /* Light yellow background */
 }
 
+/* Styling the legend inside the fieldset */
 fieldset legend {
-  color: #412c84;
-  background-color: #ffd073;
-  border: solid #200772 1px;
-  padding: 2px;
-  font-weight: bold;
+  color: #412c84; /* Dark purple color for text */
+  background-color: #ffd073; /* Matching background */
+  border: solid #200772 1px; /* Dark purple border */
+  padding: 2px; /* Adds small padding */
+  font-weight: bold; /* Makes the legend text bold */
 }
 
+/* General table styling */
 table {
-  margin: 5px;
-  padding: 5px;
+  margin: 5px; /* Adds small margin around the table */
+  padding: 5px; /* Adds padding inside the table */
 }
 
+/* Padding inside table cells */
 table td {
-  padding: 3px;
+  padding: 3px; /* Adds space inside cells */
 }
 
+/* Centering content within the element with id "middle" */
 #middle {
-  text-align: center;
+  text-align: center; /* Centers the content */
 }
 
+/* Padding for paragraphs inside the "inside" element */
 #inside p {
-  padding-left: 10px;
+  padding-left: 10px; /* Adds padding on the left */
 }
 
+/* Adding red asterisk before specific elements */
 #needed1::before,
 #needed2::before,
 #needed3::before,
@@ -142,46 +153,92 @@ table td {
 #needed6::before,
 #needed7::before,
 #needed8::before {
-  color: #ff0000;
-  content: "*";
+  color: #ff0000; /* Sets the color of the asterisk to red */
+  content: "*"; /* Inserts a red asterisk before the element */
 }
 
-footer {
-  margin: 10px;
-}
-/*
-10. Create a rule for all <p> elements that are descendent of <footer> elements. 
-Set the font size to 10pt, and the text alignment to center.
-*/
-
+/* Footer paragraph styling */
 footer p {
-  font-size: 10px;
-  text-align: center;
+  font-size: 10px; /* Small font size for footer paragraphs */
+  text-align: center; /* Centers the text in the footer */
 }
 
+/* Border styling for various elements */
 #border1 {
-  border: solid green 2px;
+  border: solid green 2px; /* Green border */
 }
 #border2 {
-  border: solid black 2px;
+  border: solid black 2px; /* Black border */
 }
 #border3 {
-  border: solid blue 2px;
+  border: solid blue 2px; /* Blue border */
 }
 #border4 {
-  border: solid red 2px;
-}
-body h1 {
-  text-align: center;
+  border: solid red 2px; /* Red border */
 }
 
+/* Header styling for h1 elements inside body */
+body h1 {
+  text-align: center; /* Centers the h1 text */
+}
+
+/* Adding margin-left to input and select elements inside #border3 */
 #border3 input,
 select {
-  margin-left: 25px;
+  margin-left: 25px; /* Adds space to the left of input/select */
 }
+
+/* Adding margin-left to input elements inside #border1 */
 #border1 input {
-  margin-left: 10px;
+  margin-left: 10px; /* Adds space to the left of input */
 }
+
+/* Adding margin-left to input elements inside #border2 */
 #border2 input {
-  margin-left: 5px;
+  margin-left: 5px; /* Adds space to the left of input */
+}
+
+
+@media (max-width: 600px) {
+  #box {
+      width: 100%; /* Make it full width */
+      margin: 0 auto; /* Center it */
+      padding: 10px; /* Add padding */
+  }
+
+  table {
+      width: 100%; /* Make tables take full width */
+      display: block;
+  }
+
+  td {
+      display: block; /* Make table cells stack vertically */
+      width: 100%;
+      padding: 8px 0;
+  }
+
+  input, select {
+      width: 100%; /* Make inputs and selects take full width */
+      margin-top: 5px;
+  }
+
+  fieldset {
+      padding: 10px;
+  }
+
+  legend {
+      font-size: 1.2em;
+      text-align: center;
+  }
+
+  h1, h2 {
+      font-size: 1.5em; /* Adjust heading size */
+      text-align: center;
+  }
+
+  p {
+      font-size: 1em; /* Adjust paragraph size */
+      text-align: center;
+  }
+
 }

@@ -1,94 +1,114 @@
 /* a) Add margin and padding 0 pixel to all the body elements */
 * {
-  margin: 0;
-  padding: 0;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
 
 /* b) Add any font family from your choice to all the body elements */
 body {
-  font-family: "Arial", sans-serif; /* You can choose a different font if desired */
+  font-family: "Arial", sans-serif; /* Set font to Arial (fallback to sans-serif if unavailable) */
+  margin-left: 20px;
 }
 
 /* c) Set the background color of the header to "#333" (Dark charcoal) and the text color to white */
 header {
-  background-color: #333;
-  color: white;
+  background-color: #333; /* Dark charcoal background for header */
+  color: white; /* White text color */
 }
 
 /* d) Add padding of 22 pixels to the header */
 header {
-  padding: 22px;
+  padding: 22px; /* Adds padding inside the header */
+  text-align: center; /* Center-aligns the text in the header */
+}
+
+/* Container class used for flexbox layout */
+.container {
+  display: flex; /* Uses flexbox layout for child elements */
+  flex-direction: row; /* Aligns child elements in a row (horizontally) */
+  justify-content: space-between; /* Distributes space evenly between child elements */
+  flex-wrap: wrap; /* Allows elements to wrap onto the next line if necessary */
+  max-width: 1400px; /* Maximum width for the container */
+  margin: 0 auto; /* Centers the container horizontally */
+  margin-top: 40px; /* Adds 40px margin to the top */
+  margin-bottom: 40px; /* Adds 40px margin to the bottom */
+}
+
+/* Box class for individual items inside the container */
+.box {
+  background-color: #f1f1f1; /* Light gray background */
+  border: solid #ddd 1px; /* Light gray border */
+  border-radius: 5px; /* Rounds the corners of the box */
+  padding: 20px; /* Adds padding inside the box */
+  min-width: 200px; /* Sets a minimum width for the box */
+  width: 200px; /* Sets a fixed width for the box */
+  margin: 10px; /* Adds margin around each box */
+}
+
+/* Styling for paragraphs inside the footer */
+footer p {
+  margin: 20px; /* Adds 20px margin around the footer text */
   text-align: center;
 }
 
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  max-width: 1400px;
-  margin: 0 auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.box {
-  background-color: #f1f1f1;
-  border: solid #ddd 1px;
-  border-radius: 5px;
-  padding: 20px;
-  min-width: 200px;
-  width: 200px;
-  margin: 10px;
-}
-
-footer p {
-  margin: 20px;
-}
-
+/* Red box styling with shadow */
 .red {
-  background-color: red;
-  box-shadow: 5px 5px 20px #333;
+  background-color: red; /* Red background color */
+  box-shadow: 5px 5px 20px #333; /* Adds shadow with dark charcoal color */
 }
+
+/* Blue box styling with shadow */
 .blue {
-  background-color: blue;
-  box-shadow: 5px 5px 20px#333;
+  background-color: blue; /* Blue background color */
+  box-shadow: 5px 5px 20px #333; /* Adds shadow with dark charcoal color */
 }
+
+/* Green box styling with shadow */
 .green {
-  background-color: green;
-  box-shadow: 5px 5px 20px #333;
+  background-color: green; /* Green background color */
+  box-shadow: 5px 5px 20px #333; /* Adds shadow with dark charcoal color */
 }
+
+/* Orange box styling with shadow */
 .orange {
-  background-color: orange;
-  box-shadow: 5px 5px 20px #333;
+  background-color: orange; /* Orange background color */
+  box-shadow: 5px 5px 20px #333; /* Adds shadow with dark charcoal color */
 }
 
+/* Yellow box styling with shadow */
 .yellow {
-  background-color: yellow;
-  box-shadow: 5px 5px 20px #333;
-}
-img {
-  width: 190px;
-  margin: 5px;
-  height: 150px;
+  background-color: yellow; /* Yellow background color */
+  box-shadow: 5px 5px 20px #333; /* Adds shadow with dark charcoal color */
 }
 
-/*  Creating a responsive layout using media queries */
+/* Image styling */
+img {
+  width: 190px; /* Sets the image width to 190px */
+  margin: 5px; /* Adds margin around the image */
+  height: 150px; /* Sets the image height to 150px */
+}
+
+.box:hover {
+  transform: scale(1.2);
+  box-shadow: 5px 5px 20px #333;
+}
+
+/* Creating a responsive layout using media queries for smaller screen sizes */
 @media (max-width: 600px) {
   .container {
-    background-color: chartreuse;
-    flex-direction: column;
-    align-items: center;
+    background-color: chartreuse; /* Changes background to chartreuse on small screens */
+    flex-direction: column; /* Changes flex direction to column (vertical stack) */
+    align-items: center; /* Centers the items horizontally */
   }
 
   .box {
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 100%; /* Makes each box take up full width */
+    margin-left: auto; /* Centers the box horizontally */
+    margin-right: auto; /* Centers the box horizontally */
   }
 
   img {
-    width: 80%;
-    height: 80%px;
+    width: 80%; /* Makes the image width 80% of its parent */
+    height: 80%; /* Makes the image height 80% of its parent */
   }
 }
