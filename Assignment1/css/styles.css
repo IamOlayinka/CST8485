@@ -1,0 +1,197 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(199, 245, 130);
+    font-size: 18px;
+    height: 100vh;
+    width: 100vw;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+}
+ul{
+    list-style-type: none;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+a{
+    text-decoration: none;
+}
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    padding: 0.5em;
+}
+
+nav ul li a:hover{
+    background-color: blue;
+    color: black;
+}
+
+main {
+    text-align: center;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+    
+    
+}
+.intro img {
+    width: 320px;
+    height: 300px;
+    border-radius: 50%;
+    margin-bottom: 1em;
+    align-items: center;
+}
+.box {
+    padding: 20px; /* Adds padding inside the box */
+    min-width: 200px; /* Sets a minimum width for the box */
+    margin: 50px; /* Adds margin around each box */
+    align-items: center;
+    height: 600px;  
+    text-align: left;
+  }
+
+.grow1, .contact, .skill{
+    flex-grow: 1;
+}
+
+.grow2{
+    flex-grow: 2;
+}
+.experience {
+    flex-grow: 6;
+}
+.grow2 h1{
+    margin-bottom: 40px;
+}
+.grow2 p{
+    margin: 10px;
+
+}
+
+
+.resume, .social{
+    display: flex;
+    flex-direction: row;
+    
+  }
+
+.box2 {
+    min-width: 200px; /* Adds padding inside the box */ 
+    height:max-content;   
+  }
+
+.box4 {
+    min-width: 200px; /* Adds padding inside the box */ 
+    min-height: 100%;   
+  }
+  .contact, .skill{
+    text-align: justify;
+    text-justify:inter-word;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: whitesmoke;
+    
+    
+  }
+  
+  
+  .contact h1 {
+    margin-top: 50px;
+    padding: 5px; 
+    font-size: 30px;
+    margin-left: 30px;
+    margin-bottom: 40px;
+  }
+  .box2 h3{
+    margin-top: 20px;
+    padding: 5px; 
+    font-size: 20px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+  }
+  .contact li, .contact h4 {
+    margin-top: 10px;
+    margin-left: 30px;
+    padding: 5px;
+    font-size: 14px;
+  }
+
+  .box2 li {
+    margin-left: 30px;
+    padding: 5px;
+    font-size: 14px;
+  }
+  .box2 h2{
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+  .linkedin img,  .github
+  img {
+    width: 30px;
+    height: 30px;
+   
+  }
+.education{
+  margin-top: 0px;
+  margin-bottom: 100px;
+  padding-left: 5px;
+  margin-left: 30px;
+
+}
+.education p{
+    margin-top: 5px;
+    font-size: 16px;
+}
+footer {
+  
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .intro{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .box {
+        padding: 20px; /* Adds padding inside the box */
+        min-width: 200px; /* Sets a minimum width for the box */
+        margin: 10px; /* Adds margin around each box */
+        align-items: center;
+        height: 350px;
+        text-align: left;
+      }
+
+      .grow2 h1{
+        margin-bottom: 20px;
+    }
+}
