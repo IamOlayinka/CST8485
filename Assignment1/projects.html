@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Projects</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/projects.js"></script>
+    
 </head>
 <body>
     <header>
@@ -22,24 +22,87 @@
     <main>
         <section class="projects">
             <h2>My Projects</h2>
-            <div class="project-container">
-                <!-- Example Project -->
-                <div class="project">
-                    <h3>Project Title</h3>
-                    <p>Description: A brief overview of the project.</p>
-                    <p>Date: [Date]</p>
-                    <p>Technologies: [Technologies used]</p>
-                    <img src="images/project1.png" alt="Project Image">
+
+            <!-- Slider Container -->
+            <div class="slider-container">
+                <!-- Project Wrapper -->
+                <div class="project-container">
+                    <!-- Project 1: Costco Prototype with Java and Spring Security -->
+                    <div class="project">
+                        <h3>Costco Prototype Using Java</h3>
+                        <p><strong>Description:</strong> A prototype for an online Costco store built with Java and integrated with Spring Security for user authentication and authorization. Users can sign up, log in, and access restricted sections based on roles and permissions.</p>
+                        <p><strong>Date:</strong> March 2025</p>
+                        <p><strong>Technologies:</strong> Java, Spring Boot, Spring Security, Thymeleaf, H2 Database</p>
+                        <p><strong>Features:</strong></p>
+                        <ul>
+                            <li>User registration and login with authentication using Spring Security</li>
+                            <li>Authorization to restrict access to certain parts of the site based on user roles (e.g., admin, customer)</li>
+                            <li>Integration of a shopping cart and product catalog</li>
+                            <li>Responsive design with Thymeleaf templates for UI rendering</li>
+                        </ul>
+                        <p><strong>Challenges:</strong> Ensuring proper session management, handling user roles, and securing sensitive data such as user credentials.</p>
+                        <img src="images/project1.png" alt="Costco Prototype Image">
+                    </div>
+        
+                    <!-- Project 2: Portfolio App using HTML, CSS, and JavaScript -->
+                    <div class="project">
+                        <h3>Portfolio App Using HTML, CSS, and JavaScript</h3>
+                        <p><strong>Description:</strong> A personal portfolio website built using HTML, CSS, and JavaScript. It showcases various web development projects, skills, and achievements, offering visitors a glimpse into my work as a developer.</p>
+                        <p><strong>Date:</strong> February 2025</p>
+                        <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Responsive Design</p>
+                        <p><strong>Features:</strong></p>
+                        <ul>
+                            <li>Responsive layout that adapts to different screen sizes (desktop, tablet, mobile)</li>
+                            <li>Interactive sections with JavaScript for smooth scrolling and dynamic content loading</li>
+                            <li>Showcases various projects with descriptions, images, and links to live demos</li>
+                            <li>Minimalistic and clean design focusing on content presentation</li>
+                        </ul>
+                        <p><strong>Challenges:</strong> Ensuring that the design is visually appealing while maintaining a smooth and responsive user experience across devices.</p>
+                        <img src="images/project2.png" alt="Portfolio App Image">
+                    </div>
+        
+                    <!-- Project 3 -->
+                    <div class="project">
+                        <h3>Project Title 3</h3>
+                        <p>Description: A brief overview of the project.</p>
+                        <p>Date: [Date]</p>
+                        <p>Technologies: [Technologies used]</p>
+                        <img src="images/project3.png" alt="Project Image 3">
+                    </div>
+        
+                    <!-- Project 4 -->
+                    <div class="project">
+                        <h3>Project Title 4</h3>
+                        <p>Description: A brief overview of the project.</p>
+                        <p>Date: [Date]</p>
+                        <p>Technologies: [Technologies used]</p>
+                        <img src="images/project4.png" alt="Project Image 4">
+                    </div>
+        
+                    <!-- Project 5 -->
+                    <div class="project">
+                        <h3>Project Title 5</h3>
+                        <p>Description: A brief overview of the project.</p>
+                        <p>Date: [Date]</p>
+                        <p>Technologies: [Technologies used]</p>
+                        <img src="images/project5.png" alt="Project Image 5">
+                    </div>
                 </div>
+        
+                <!-- Previous Button -->
+                <button class="prev">&#10094;</button>
+        
+                <!-- Next Button -->
+                <button class="next">&#10095;</button>
             </div>
 
-            <button onclick="showNext()">Next</button>
-            <button onclick="showPrevious()">Previous</button>
         </section>
     </main>
 
     <footer>
-        <p>&copy; [Your Name] - [Year]</p>
+        <p>&copy; Olayinka Idumu - 2025</p>
     </footer>
+
+    <script src="myscript.js"></script>
 </body>
 </html>

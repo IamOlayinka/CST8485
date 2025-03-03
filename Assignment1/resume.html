@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Name - Resume</title>
     <link rel="stylesheet" href="css/styles.css">
-    <script src="myscript.js" defer></script>
+    
 </head>
 <body>
     <header>
@@ -37,18 +37,70 @@
             </ul>    
             </div>
             
-            <div class="box2 experience">
-            <h2>Summary</h2>
-            <p><strong>[Your career objective or goals]</strong></p>
-
-            <h2>Work Experience</h2>
-            <div>
-                <h3>[Job Title] at [Company Name]</h3>
-                <p>[Dates of Employment]</p>
-                <p>[Responsibilities and Achievements]</p>
-            </div>
-            </div>
             
+            <div class="box2 experience">
+            <div class="summary">
+            <h2>Summary</h2>
+            <p>A Web Developer with two years of experience. Proficient in designing, developing, and maintaining responsive websites and web applications.
+                  I have a solid understanding of front-end and back-end technologies,
+                  including HTML, CSS, JavaScript, and  back-end language (e.g.Java, C#,Node.js, PHP, Python). I have 2 years experience in 
+                  working with databases, version control (Git), and various web frameworks (such as React,React-Hooks, ASP.NET, Springboot). I am skilled in building user-friendly, 
+                  scalable, and secure web applications. I have collaborated with cross-functional teams to implement client requirements, troubleshoot 
+                  and debug issues, and optimize the performance of web applications across various devices. Their experience extends to deploying 
+                  websites and ensured their compatibility with various browsers and devices.
+                </p>
+            </div>
+            <h2>Work Experience</h2>
+           
+            <div class="exp">
+                <h3>Costco Wholesales</h3>
+                <h5>Cashier and Night Merchendizing <span class="date">Aug 2023 - Still on</span></h5>
+                <p class="res"><span class="res_text">Reponsibilities</span> <span id="min1" class="minimize_icon" onclick="myfun1()"><img src="img/minus.png" alt="-"></span><span id="max1"  class="maximize_icon" onclick="myfun1()"><img src="img/plus-sign.png" alt="+" ></span> </p>
+                <ul id="res_list_1" class="res_list res_list_1">
+                    <li>Scan products and process customer transactions accurately</li>
+                    <li>Handle cash and credit card transactions</li>
+                    <li>Support in the delivery of company-directed promotions and programs</li>
+                    <li>Assist customers with general inquiries</li>
+                    <li>Keep the register area neat and stocked with essential supplies</li>
+                    <li>Follows merchandising standards and practices. Aligns product, collects and returns stray items, stocks to maintain high product levels.</li>
+                    <li>Communicates with supervisors and managers to determine merchandising plan and priorities. Writes list of products to be brought from steel, by forklift driver, for stocking.</li>
+                    <li>Stocks opened cases on shelves. Moves and positions pallets of merchandise using manual pallet jack. Stacks product from partial pallets onto full pallets</li>
+                    <li>Creates computer-generated signs. Observes and ensures correct product signage. Marks unmarked product with item number using marking gun.</li>
+
+
+                </ul>
+            </div>  
+            <div class="exp">
+            
+                <h3>Allianz Insurance</h3>
+                <h5>Database Administrator <span class="date">Jan 2021 - May 2023</span></h5>
+                <p class="res"><span class="res_text">Reponsibilities</span> <span id="min2" class="minimize_icon" onclick="myfun2()"><img src="img/minus.png" alt="-"></span><span id="max2"  class="maximize_icon" onclick="myfun2()"><img src="img/plus-sign.png" alt="+" ></span>  </p>
+                <ul id="res_list_2" class="res_list res_list_2">
+                    <li>Maintained detailed documentation for database architecture, configurations, and processes.</li>
+                    <li>Designed and modeled database schemas to reduce redundancy.</li>
+                    <li>Monitored performance and provided information on ways to improve the authenticity and security of data</li>
+                    <li>Provided training, feedback, and support to users on the usage of data provided</li>
+                    <li>Managed database access and kept stored data up-to-date</li>
+                    <li>Implementing changes in database operations and ensured data is readily available to end-users</li>
+                    <li>Maintained database backup and recovery infrastructure</li>
+                    <li>Performed diagnostics, testing, and troubleshooting of software, o/s, and database issues (ex. correcting installation, configuration, or data problems)</li>
+                </ul>
+            </div>
+            <div class="exp exp_3">
+            <h3>Fortis Fortuna Technology</h3>
+            <h5>Web Developer  <span class="date"> Nov 2018 - Dec 2021</span></h5>
+            <p class="res"><span class="res_text">Reponsibilities</span>  <span id="min3" class="minimize_icon" onclick="myfun3()"><img src="img/minus.png" alt="-"></span><span id="max3"  class="maximize_icon" onclick="myfun3()"><img src="img/plus-sign.png" alt="+"></span> </p>
+            <ul id = 'res_list_3' class="res_list res_list_3">
+                <li>Wrote well designed, testable, efficient code by using best software development practices</li>
+                <li>Created website layout/user interface by using standard HTML/CSS practices</li>
+                <li>Working closely with web designers and programmers to produce the website</li>
+                <li>Integrated data from various back-end services and databases</li>
+                <li>Gathered and refined specifications and requirements based on technical needs</li>
+                <li>Stayed plugged into emerging technologies/industry trends and apply them into operations and activities</li>
+                <li>Developed and maintain operational systems, tools, and processes, and participate in tactical and strategic development projects</li>
+            </ul>
+            </div>
+            </div>
             <div class="box2 skill">
             <h2>Skills</h2>
             <h3>Programming Languages</h3>
@@ -61,7 +113,7 @@
                 <li>HTML</li>
                 <li>CSS</li>
             </ul>
-            <h3>Frameworks and libraries</h3>
+            <h3>Frameworks</h3>
             <ul>
                 <li>Spring and Springboot</li>
                 <li>Node.Js with Express</li>
@@ -100,6 +152,12 @@
 
     <footer>
         <p>&copy; Olayinka Idumu- 2025</p>
+        <a href="https://www.flaticon.com/free-icons/minimize" title="minimize icons">Minimize icons created by gravisio - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/plus-sign" title="plus sign icons">Plus sign icons created by bsd - Flaticon</a>
+        
     </footer>
+
+
+    <script src="myscript.js" defer></script>
 </body>
 </html>
