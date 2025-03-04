@@ -7,10 +7,11 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color:rgb(199, 245, 130);
+    background-color:rgb(61, 101, 1);
     font-size: 18px;
     height: 100vh;
     width: 100vw;
+    color: aliceblue;
 }
 
 header {
@@ -32,6 +33,7 @@ nav ul li {
 
 a{
     text-decoration: none;
+    color: blue;
 }
 nav ul li a {
     color: white;
@@ -84,6 +86,7 @@ main {
 }
 .grow2 h1{
     margin-bottom: 40px;
+    text-align: center;
 }
 .grow2 p{
     margin: 10px;
@@ -251,6 +254,8 @@ main {
     width: 80%; /* Adjust width of the slider */
     margin: auto;
     overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
 }
 
 /* The wrapper that holds the project items */
@@ -267,20 +272,46 @@ main {
 }
 
 /* Style the individual project elements */
+.project{
+    text-align: left;
+}
+.projects h2{
+    margin-bottom: 1em;
+    margin-top: 3em;
+}
+
+
 .project h3 {
     font-size: 24px;
     margin-bottom: 10px;
+    margin-left: 2.2em;
+    margin-top: 10px
 }
 
 .project p {
-    font-size: 16px;
-    margin: 5px 0;
+    font-size: 12pt;
+    margin: 5px 3rem;
+    padding: 5px;
 }
 
+.project ul{
+    list-style-type: disc;
+    margin: 0px 4rem;
+    padding: 5px 10px;
+    
+}
+
+.project ul li{
+    font-size: 14px;
+    margin-top: 5px;
+}
 .project img {
-    max-width: 100%;
+    width: 40%;
+    height: 40%;
     height: auto;
     margin-top: 10px;
+    margin-bottom: 20%;
+    margin-left: 30%;
 }
 
 /* Previous and Next Buttons */
@@ -326,7 +357,12 @@ footer {
         flex-direction: column;
         
     }
-
+    .intro img {
+        margin-left: 40px;
+        margin-top: 40px;
+        
+        
+      }
     .box {
         padding: 20px; /* Adds padding inside the box */
         min-width: 200px; /* Sets a minimum width for the box */
@@ -335,7 +371,7 @@ footer {
         height: 350px;
         text-align: left;
       }
-
+      
       .grow2 h1{
         margin-bottom: 20px;
     }.resume{
